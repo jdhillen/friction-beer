@@ -1,9 +1,9 @@
 {
-  "name": "vue-template",
-  "version": "0.0.7",
-  "engines" : {
+  "name": "friction-beer",
+  "version": "0.0.1",
+  "engines": {
     "npm": "8.3.1",
-    "node" : ">=16.14.0"
+    "node": ">=16.14.0"
   },
   "scripts": {
     "dev": "vite",
