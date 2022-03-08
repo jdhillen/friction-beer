@@ -2,14 +2,18 @@
 <template>
   <MetaData :data="metaData" />
   <section class="home">
-    <hello-world />
+    <h1>Coming Soon!</h1>
+    <div class="row">
+      <div class="twelve columns">
+        <img class="img" alt="" src="@/assets/img/building.jpg" />
+      </div>
+    </div>
   </section>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script>
 import MetaData from '@/components/global/MetaData.vue';
-import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'home-page',
@@ -18,7 +22,6 @@ export default {
 
   components: {
     MetaData,
-    HelloWorld
   },
 
   data() {
@@ -58,5 +61,6 @@ export default {
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
 .home {
+  text-align: center;
 }
 </style>

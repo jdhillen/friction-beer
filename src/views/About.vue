@@ -1,46 +1,57 @@
 <!--|== Template =============================================================================== -->
 <template>
   <MetaData :data="metaData" />
-  <section class="about row">
-    <div class="twelve columns">
-      <h1>About</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-        mollis laoreet lectus lobortis luctus. Aenean vel orci ante. Mauris sit
-        amet consequat tortor. Mauris tristique sodales nisl, vel tincidunt
-        turpis commodo quis. Phasellus sodales, diam nec euismod pretium, lectus
-        lacus pharetra neque, quis laoreet justo nisl ut orci. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Curabitur rutrum,
-        quam non feugiat egestas, tortor sem rutrum mauris, eget semper ante
-        justo vel mauris.
-      </p>
-      <p>
-        Praesent eu molestie nisi. Sed nec tincidunt nibh. Ut molestie
-        vestibulum ligula, vel interdum leo sollicitudin quis. Sed lectus ante,
-        pellentesque eu efficitur ut, euismod sed enim. Vestibulum at sem ex.
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia curae; Fusce et lacus sit amet lorem faucibus aliquam vel quis
-        libero. Donec quis pharetra augue. In rutrum odio vel lacus eleifend
-        iaculis. Nunc lacus nisi, feugiat in quam eget, vulputate fringilla
-        nunc. Nunc in mattis lectus. Quisque facilisis felis id enim viverra
-        sagittis. Duis a lacus nunc.
-      </p>
-      <p>
-        Curabitur pretium erat nisi, vitae pretium velit aliquam efficitur.
-        Aliquam metus leo, gravida in magna ut, pellentesque ornare est. Etiam
-        facilisis porta nibh, convallis varius neque imperdiet ut. Fusce at mi a
-        nisi tincidunt mollis. Donec et erat et augue pulvinar convallis. Nam
-        luctus egestas purus et iaculis. Maecenas efficitur purus ut posuere
-        sodales. Curabitur ac dignissim ante. Nulla faucibus mauris ac dui
-        dictum ornare. Integer accumsan sem metus, id ultricies sem cursus
-        vitae. Fusce accumsan, sapien at tempor eleifend, tortor purus efficitur
-        tortor, ut maximus sapien lectus ut ante. Pellentesque aliquam diam eu
-        porta luctus. Curabitur nec nunc sed enim pharetra vestibulum. Nam
-        semper nulla non lectus consequat, consequat interdum ex vehicula. Orci
-        varius natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Duis mattis nisl diam.
-      </p>
+  <section>
+    <div class="row">
+      <div class="twelve columns">
+        <h3>The Friction Story</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="six columns">
+        <img class="img" alt="" src="@/assets/img/pic01.jpg" />
+      </div>
+      <div class="six columns">
+        <img class="img" alt="" src="@/assets/img/pic02.jpg" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <p>
+          Around here we tend to say “timing is everything” a lot. Particularly in relation to how our
+          founders Brent Anderson and Nathan Ryerson met and how Friction Beer Company came to be
+          in the first place. You could say it was part fate, part serendipity, part patience (not always in
+          big supply) and part bullheaded determination. But once that fire was lit, we had to keep it
+          going.
+        </p>
+        <p>
+          Flashback to 2011. Avid homebrewer and beer reviewer Nathan was already planning to fulfill a
+          longtime dream of opening a brewery. But as often happens when cosmic forces aren’t aligned,
+          life got in the way. He had the name and a larger idea of what he wanted it to be and still
+          decided to put the project on a shelf until it made sense.
+        </p>
+        <p>
+          Fast forward to fall of 2016. As he often did, Nathan was hosting a weekend soccer watch party.
+          Equally fervent fan Brent showed up, having recently met Nathan at a brewery opening. Brent
+          had recently left his marketing position as Creative Director for local beer legends Boulevard
+          Brewing. Much beer was shared and discussed. And by the end of the match, the two hatched a
+          plan to revive Nathan’s original plan. Only now, there was a team behind it.
+        </p>
+        <p>
+          Many ups and downs followed that fortuitous morning. Countless potential spaces toured.
+          Investors gained and lost. Successful pourings at beer fests. New friends and supporters made.
+          Leases signed and plans scuttled. Lest we forget a freakin’ global pandemic. Through it all, the
+          belief in the brand, the beer and all we had to offer never wavered.
+        </p>
+        <p>
+          Which leads us to our fantastic first home in Shawnee, where apparently we were meant to be
+          and why all that led up to our launch was entirely worth it. So here’s to social lubricants,
+          healthy tension and Friction – from which comes the spark. To you and those who got us here,
+          mighty thanks.
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -95,5 +106,9 @@ export default {
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
 .about {
+}
+
+h1 {
+  text-align: center;
 }
 </style>

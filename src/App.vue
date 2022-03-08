@@ -1,22 +1,18 @@
 <!--|== Template =============================================================================== -->
 <template>
   <section class="app container">
+    <div class="row align">
+      <div class="four columns">
+        <img class="logo" alt="Vue logo" src="@/assets/img/logo.png" />
+      </div>
+    </div>
     <div class="row">
       <div class="twelve columns">
-        <div id="nav">
-          <router-link :to="{ name: 'Home' }">Home</router-link> |
+        <div id="nav" class="nav">
+          <router-link :to="{ name: 'Home' }">Home</router-link>
+          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
           <router-link :to="{ name: 'About' }">About</router-link>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <img alt="Vue logo" src="@/assets/img/logo.png" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <p>{{ title }}</p>
       </div>
     </div>
     <router-view />
@@ -33,9 +29,7 @@ export default {
   components: {},
 
   data() {
-    return {
-      title: import.meta.env.VITE_APP_TITLE
-    };
+    return {};
   },
 
   beforeCreate() {},
@@ -65,7 +59,27 @@ export default {
 <!--|== CSS ==================================================================================== -->
 <style lang="scss">
 .app {
-  text-align: center;
   margin-top: 50px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 </style>

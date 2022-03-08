@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  color: #42b983;
+  color: #000;
   text-decoration: none;
 }
 
@@ -35,4 +35,10 @@ a {
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
 }
