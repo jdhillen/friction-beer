@@ -1,0 +1,25 @@
+{
+  "name": "vue-template",
+  "version": "0.0.7",
+  "engines" : {
+    "npm": "8.3.1",
+    "node" : ">=16.14.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "pinia": "^2.0.11",
+    "vue": "^3.2.30",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/compiler-sfc": "^3.2.30",
+    "sass": "^1.49.7",
+    "vite": "^2.8.1"
+  }
+}
