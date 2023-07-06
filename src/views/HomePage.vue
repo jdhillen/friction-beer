@@ -18,8 +18,10 @@
 
     <div class="row">
       <div class="twelve columns">
-        <form name="Mailing List" class="mailing-form" netlify>
-          <input type='email' name="email" placeholder="Enter Your Email For News and updates." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+        <form name="Mailing List" class="mailing-form" data-netlify="true">
+          <label>
+            <input type='email' name="email" placeholder="Enter Your Email For News and updates." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          </label>
           <button type="submit" class="mailing-form__button">Submit</button>
         </form>
       </div>
@@ -188,6 +190,10 @@
   @include breakpoint('sm') {
     flex-direction: row;
     align-items: initial;
+  }
+
+  label {
+    width: 100%;
   }
   
   input[type='email'] {
