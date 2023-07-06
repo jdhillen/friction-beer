@@ -18,6 +18,57 @@
   src: url('@/assets/fonts/open-sans/open_sans_bold.woff2') format('woff2');
 }
 
+// ==|== Prohibition ===============================================================================
+@font-face {
+  font-family: 'Prohibition Lines';
+  src: url('@/assets/fonts/prohibition/Prohibition-Lines.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-Lines.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Prohibition Round';
+  src: url('@/assets/fonts/prohibition/Prohibition-RoundOblique.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-RoundOblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Prohibition Rough';
+  src: url('@/assets/fonts/prohibition/Prohibition-RoughOblique.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-RoughOblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Prohibition Round';
+  src: url('@/assets/fonts/prohibition/Prohibition-Round.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-Round.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Prohibition';
+  src: url('@/assets/fonts/prohibition/Prohibition-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Prohibition Oblique';
+  src: url('@/assets/fonts/prohibition/Prohibition-Oblique.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-Oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Prohibition Rough';
+  src: url('@/assets/fonts/prohibition/Prohibition-Rough.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-Rough.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Prohibition Lines Oblique';
+  src: url('@/assets/fonts/prohibition/Prohibition-LinesOblique.woff2') format('woff2'),
+    url('@/assets/fonts/prohibition/Prohibition-LinesOblique.woff') format('woff');
+}
+
+
+
 // ==|== Helper Classes ============================================================================
 .smooth {
   -webkit-text-stroke: 0.35px;

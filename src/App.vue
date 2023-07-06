@@ -1,85 +1,30 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <section class="app container">
-    <div class="row align">
-      <div class="four columns">
-        <img class="logo" alt="Vue logo" src="@/assets/img/logo.png" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <div id="nav" class="nav">
-          <router-link :to="{ name: 'Home' }">Home</router-link>
-          <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-          <router-link :to="{ name: 'About' }">About</router-link>
-        </div>
-      </div>
-    </div>
-    <router-view />
-  </section>
+  <div class="app">
+    <SiteHeader />
+    <main>
+      <router-view />
+    </main>
+    <SiteFooter />
+  </div>
 </template>
 
 <!--|== Scripts ================================================================================ -->
-<script>
-export default {
-  name: 'app',
-
-  props: {},
-
-  components: {},
-
-  data() {
-    return {};
-  },
-
-  beforeCreate() {},
-
-  created() {},
-
-  beforeMount() {},
-
-  mounted() {},
-
-  beforeUpdate() {},
-
-  updated() {},
-
-  beforeUnmount() {},
-
-  unmounted() {},
-
-  computed: {},
-
-  methods: {},
-
-  watch: {}
-};
+<script setup>
+import SiteHeader from '@/components/SiteHeader.vue';
+import SiteFooter from '@/components/SiteFooter.vue';
 </script>
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss">
 .app {
-  margin-top: 50px;
-}
-
-.nav {
+  flex: 1;
+  height: auto !important;
+  min-height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.align {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
+  flex-direction: column;
+  background-image: url('@/assets/img/bg.png');
+  background-size: cover;
+  background-position: center;
 }
 </style>

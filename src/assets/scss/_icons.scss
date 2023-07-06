@@ -1,0 +1,30 @@
+
+// =================================================================================================
+// ---- icons ----
+// =================================================================================================
+
+.icon {
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+
+  &__social {
+    filter: drop-shadow(2px 2px 3px black(0.2));
+  }
+
+  &__facebook {
+    background-image: url('@/assets/img/icons/facebook.svg');
+  }
+
+  &__twitter {
+    background-image: url('@/assets/img/icons/twitter.svg');
+  }
+  
+  &__instagram {
+    background-image: url('@/assets/img/icons/instagram.svg');
+  }
+}
