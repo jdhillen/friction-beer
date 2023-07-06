@@ -18,7 +18,7 @@
 
     <div class="row">
       <div class="twelve columns">
-        <form name="name" action="POST" data-netlify="true" class="mailing-form">
+        <form name="mailinglist" action="POST" data-netlify="true" class="mailing-form">
           <input type='email' name="email" placeholder="Enter Your Email For News and updates." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
           <button type="submit" class="mailing-form__button">Submit</button>
         </form>
