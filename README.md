@@ -1,6 +1,6 @@
-# vue-template
+# friction-beer
 
-> Starter project for developing in Vue 3 on top of Vite
+> Landing page for Friction Beer Company built in Vue 3 on top of Vite
 
 ---
 
@@ -16,10 +16,10 @@
 ```bash
 
 # clone the repo
-git clone https://github.com/jdhillen/vue-template.git
+git clone https://github.com/jdhillen/friction-beer.git
 
 # cd into the folder
-cd vue-template
+cd friction-beer
 
 # install dependencies
 npm install
