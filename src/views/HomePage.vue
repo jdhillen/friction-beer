@@ -83,10 +83,15 @@ const sendForm = async () => {
 
   let resp = await fetch('/', {
     method:'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body:formData
-  });
-  // assume ok, although double check
-  alert('Submitted!');
+  })
+  .then(() => {
+    alert('Submitted!');
+  })
+  .catch((error) => {
+    console.error(`Submission error: ${error.message}`);
+  }); 
 }
 </script>
 
