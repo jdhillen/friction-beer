@@ -18,10 +18,10 @@
 
     <div class="row">
       <div class="twelve columns">
-        <form name="list" method="POST" data-netlify="true" class="mailing-form">
-          <input type='email' name="email" placeholder="Enter Your Email For News and updates." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+        <form method="post" name="Email Subscribers" id="myForm" netlify ref="formName" class="mailing-form">
+          <input type="email" name="email" id="email" v-model="email" placeholder="Enter Your Email For News and updates." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
           <input type="hidden" name="form-name" value="list" />
-          <button class="mailing-form__button">Submit</button>
+          <button class="mailing-form__button" type="submit" @click.prevent="sendForm">Submit</button>
         </form>
       </div>
     </div>
@@ -72,6 +72,23 @@
 
 <!--|== Scripts ================================================================================ -->
 <script setup>
+import { ref } from 'vue';
+
+const formName = ref(null);
+const email = ref(null);
+
+const sendForm = async () => {
+  let formData = new FormData();
+  formData.append('email', email);
+  formData.append('form-name', formName);
+
+  let resp = await fetch('/', {
+    method:'POST',
+    body:formData
+  });
+  // assume ok, although double check
+  alert('Submitted!');
+}
 </script>
 
 <!--|== CSS ==================================================================================== -->
