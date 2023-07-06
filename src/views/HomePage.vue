@@ -18,34 +18,13 @@
 
     <div class="row">
       <div class="twelve columns">
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-          <p>
-            <label>Your Role: <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-
-
-        <!-- <form name="list" method="POST" data-netlify="true" class="mailing-form">
+        <form name="list" method="POST" data-netlify="true" class="mailing-form">
           <label>
             <input type='email' name="email" placeholder="Enter Your Email For News and updates." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
           </label>
+          <input type="hidden" name="form-name" value="list" />
           <button type="submit" class="mailing-form__button">Submit</button>
-        </form> -->
+        </form>
       </div>
     </div>
 
