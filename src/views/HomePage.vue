@@ -114,6 +114,7 @@ const sendForm = async () => {
   @include breakpoint('sm') {
     max-width: 275px;
     margin-top: 50px;
+    margin-bottom: 250px;
   }
 }
 
