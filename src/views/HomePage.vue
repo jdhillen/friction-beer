@@ -11,8 +11,8 @@
         <div class="times__header">Now Open.</div>
         <div class="times__day">Thursday&emsp;4pm - 10pm</div>
         <div class="times__day">Friday&emsp;4pm - 10pm</div>
-        <div class="times__day">Saturday&emsp;12am - 10pm</div>
-        <div class="times__day">Sunday&emsp;12am - 7pm</div>
+        <div class="times__day">Saturday&emsp;12pm - 10pm</div>
+        <div class="times__day">Sunday&emsp;12pm - 7pm</div>
       </div>
     </div>
 
