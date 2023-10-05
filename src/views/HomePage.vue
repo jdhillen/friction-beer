@@ -9,8 +9,7 @@
     <div class="row">
       <div class="twelve columns times">
         <div class="times__header">Now Open.</div>
-        <div class="times__day">Thursday&emsp;4pm - 10pm</div>
-        <div class="times__day">Friday&emsp;4pm - 10pm</div>
+        <div class="times__day">Wednesday - Friday&emsp;4pm - 10pm</div>
         <div class="times__day">Saturday&emsp;12pm - 10pm</div>
         <div class="times__day">Sunday&emsp;12pm - 7pm</div>
       </div>
